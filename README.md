@@ -4,6 +4,12 @@ The purpose of this project is to give flow samples how to deal with Keycloack O
 
 As premise the developer must have a Wildfly running in 127.0.0.1:8080.
 
+Steps to set up:
+
+1) Create a realm called "oauth-demo"
+2) Create a client called "odata4-oauth"
+3) Add user, role=scopes, etc...
+
 ## Authorization code
 http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?response_type=code&client_id=odata4-oauth&redirect_uri=http://localhost
 
