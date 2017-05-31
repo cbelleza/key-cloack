@@ -1,12 +1,16 @@
-#KeyCloack OAuth2 - Flow samples
+# Keycloack OAuth2 - Flow Examples
 
-##Authorization code
+The purpose of this project is to give URI samples how to deal with Keycloack OAuth2.
+
+It dependes on having Wildfly running in localhost:8080
+
+## Authorization code
 http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?response_type=code&client_id=odata4-oauth&redirect_uri=http://localhost
 
-##Implicit
+## Implicit
 http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?response_type=token&client_id=odata4-oauth&redirect_uri=http://localhost&nonce=11111&state=FFFFF
 
-##Password
+## Password
 POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
 Host: 127.0.0.1:8080
 Cache-Control: no-cache
