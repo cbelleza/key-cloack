@@ -10,7 +10,7 @@ Steps to set up:
 2) Create a client called "odata4-oauth"
 3) Create a user, set roles to user, etc...
 
-![Clients section](https://github.com/cbelleza/keycloack/blob/master/Clients-Configuration.PNG)
+![Clients section](https://github.com/cbelleza/keycloack/blob/master/ClientsSection.png)
 
 
 ## Authorization code
