@@ -8,7 +8,7 @@ Steps to set up:
 
 1) Create a realm called "oauth-demo"
 2) Create a client called "odata4-oauth"
-3) Add user, role=scopes, etc...
+3) Create a user, set roles to user, etc...
 
 ## Authorization code
 http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?response_type=code&client_id=odata4-oauth&redirect_uri=http://localhost
@@ -21,8 +21,17 @@ http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?respon
 POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
 Host: 127.0.0.1:8080
 Cache-Control: no-cache
-Postman-Token: 121c3628-2da3-e3be-c566-6bdeb963932e
 Content-Type: application/x-www-form-urlencoded
 
 grant_type=password&username=user&password=user&client_id=odata4-oauth
+```
+
+## Client credentials
+```
+POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
+Host: 127.0.0.1:8080
+Cache-Control: no-cache
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials&client_id=odata4-oauth&client_secret=8fb0027b-980b-48d6-af0b-a15f74fb465d
 ```
