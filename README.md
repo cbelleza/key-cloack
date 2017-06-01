@@ -10,6 +10,9 @@ Steps to set up:
 2) Create a client called "odata4-oauth"
 3) Create a user, set roles to user, etc...
 
+![Clients section](https://github.com/cbelleza/keycloack/blob/master/Clients-Configuration.PNG)
+
+
 ## Authorization code
 http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?response_type=code&client_id=odata4-oauth&redirect_uri=http://localhost
 
