@@ -16,7 +16,7 @@ Steps to set up:
 
 Keycloack support the following OAuth2 flows:
 
-### **Authorization code**
+### *Authorization code*
 
 #### Step 1: User grants access
 
@@ -36,10 +36,10 @@ code=DxdTjfianxXyPnYbzvbAMpi2y01vE_xCqne-3f3I51o.1af86eb3-705d-46cd-850f-ea4639b
 redirect_uri=http://localhost
 ```
 
-### **Implicit**
+### *Implicit*
 http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?response_type=token&client_id=odata4-oauth&redirect_uri=http://localhost&nonce=11111&state=FFFFF
 
-### **Password**
+### *Password*
 ```
 POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
 Host: 127.0.0.1:8080
@@ -52,7 +52,7 @@ username=user
 password=user
 ```
 
-### **Client credentials**
+### *Client credentials*
 ```
 POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
 Host: 127.0.0.1:8080
