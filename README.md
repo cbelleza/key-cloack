@@ -24,7 +24,6 @@ http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?respon
 POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
 Host: 127.0.0.1:8080
 Cache-Control: no-cache
-Postman-Token: 30fc3a5c-0846-bb63-3821-7096ff9ff483
 Content-Type: application/x-www-form-urlencoded
 
 grant_type=authorization_code
