@@ -27,7 +27,7 @@ Cache-Control: no-cache
 Postman-Token: 30fc3a5c-0846-bb63-3821-7096ff9ff483
 Content-Type: application/x-www-form-urlencoded
 
-grant_type=authorization_code&client_id=odata4-oauth&client_secret=8fb0027b-980b-48d6-af0b-a15f74fb465d&code=DxdTjfianxXyPnYbzvbAMpi2y01vE_xCqne-3f3I51o.1af86eb3-705d-46cd-850f-ea4639b08849&redirect_uri=http%3A%2F%2Flocalhost
+grant_type=authorization_code&client_id=odata4-oauth&client_secret=8fb0027b-980b-48d6-af0b-a15f74fb465d&code=DxdTjfianxXyPnYbzvbAMpi2y01vE_xCqne-3f3I51o.1af86eb3-705d-46cd-850f-ea4639b08849&redirect_uri=http://localhost
 ```
 
 ## Implicit
