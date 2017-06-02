@@ -15,11 +15,11 @@ Steps to set up:
 
 ## Authorization code
 
-#### Step 1: User grants access
+#### > Step 1: User grants access
 
 http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?response_type=code&client_id=odata4-oauth&redirect_uri=http://localhost&state=FFFFF
 
-#### Step 2: Application requests access token
+#### > Step 2: Application requests access token
 ```
 POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
 Host: 127.0.0.1:8080
