@@ -36,6 +36,19 @@ code=DxdTjfianxXyPnYbzvbAMpi2y01vE_xCqne-3f3I51o.1af86eb3-705d-46cd-850f-ea4639b
 redirect_uri=http://localhost
 ```
 
+OR using "Authorization" header
+
+```
+POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
+Host: 127.0.0.1:8080
+Authorization: Basic b2RhdGE0LW9hdXRoOjljYmEyMzhkLTc0ZjItNDJmZC1hMmIwLTVlNzc3Yjk1ODhiYw==
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code
+code=gRmtfV5LSUrlzdcnNX_tzLw7vk_RCc4k2o1kAXJS_aU.de981c0e-14bf-4258-8d4c-99e26063eeba
+redirect_uri=http%3A%2F%2Flocalhost
+```
+
 ### Implicit
 http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?response_type=token&client_id=odata4-oauth&redirect_uri=http://localhost&nonce=11111&state=FFFFF
 
