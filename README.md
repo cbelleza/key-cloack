@@ -36,7 +36,7 @@ code=DxdTjfianxXyPnYbzvbAMpi2y01vE_xCqne-3f3I51o.1af86eb3-705d-46cd-850f-ea4639b
 redirect_uri=http://localhost
 ```
 
-OR using "Authorization" header
+OR using "Authorization" header "Basic BASE64(client_id:client_secret)"
 
 ```
 POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
