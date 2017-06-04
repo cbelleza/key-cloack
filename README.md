@@ -1,6 +1,6 @@
-# Keycloack OAuth2
+# Keycloack OAuth2 and OpenID Connect
 
-The purpose of this project is to give flow samples how to deal with Keycloack OAuth2.
+The purpose of this project is to give flow samples how to deal with Keycloack OAuth2 and OpenID Connect.
 
 As premise the developer must have a Wildfly running in 127.0.0.1:8080.
 
@@ -56,7 +56,6 @@ http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?respon
 ```
 POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
 Host: 127.0.0.1:8080
-Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
 
 grant_type=password
@@ -75,4 +74,15 @@ Content-Type: application/x-www-form-urlencoded
 grant_type=client_credentials
 client_id=odata4-oauth
 client_secret=8fb0027b-980b-48d6-af0b-a15f74fb465d
+```
+
+## OpenID Connect endpoints
+
+### Userinfo
+
+```
+GET /auth/realms/oauth-demo/protocol/openid-connect/userinfo HTTP/1.1
+Host: 127.0.0.1:8080
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJGTzZXamFRTHBNakJVWFRUMEl4Zmd2Vi1SSFZqb0dqQkRFMEFEYTJydVp3In0.eyJqdGkiOiIyN2U0NjNlZi02YWRjLTQ0OGQtODc2Yi1mNTE2OTRkYWM1MjkiLCJleHAiOjE0OTY1NDEwOTcsIm5iZiI6MCwiaWF0IjoxNDk2NTQwMTk3LCJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwODAvYXV0aC9yZWFsbXMvb2F1dGgtZGVtbyIsImF1ZCI6Im9kYXRhNC1vYXV0aCIsInN1YiI6IjM0NmIyYTM5LWVlMTktNDYwYS04OWJjLTgxODM5MDUxMDE3OCIsInR5cCI6IkJlYXJlciIsImF6cCI6Im9kYXRhNC1vYXV0aCIsIm5vbmNlIjoiMTExMTEiLCJhdXRoX3RpbWUiOjE0OTY1NDAxOTcsInNlc3Npb25fc3RhdGUiOiI0NGM3ODdkNy0zNjkyLTQxMzAtYmIyMy02MGViNGY4NjQzN2UiLCJhY3IiOiIxIiwiY2xpZW50X3Nlc3Npb24iOiJmNTYwNzE3ZC1jODJhLTRmMDEtOWE0Yi1kOTdkOTU2MjcyMmMiLCJhbGxvd2VkLW9yaWdpbnMiOltdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJuYW1lIjoiIiwicHJlZmVycmVkX3VzZXJuYW1lIjoidXNlciJ9.N9mz4z_-fOjgcy7IJj2PcZewegirL5c-xC6irwg5aQ1cHOBR1fO1dGYq1dBR9V3bPSAaRjCxh5PxL-xfnMEyL8w0f2_zZ0NnCJ9mbnyh730Ba7tEDyH7zKjbu7UtaUNy3cVHqmUyNVvDncugiqtw4an8vK6z1hAK8O1_IAtGz5C7Rh89INRV5IhyjGRm6ZaxCeR4PBEMgtmv07ZlcX9mDbV-CtIKW8FR9fd1oHWrV2yEuu9asnS5erkydGbq8sw_LUGkS5CEnPU2EJn8SIRcE-S1DLrzyOYYWDa2DP2zOYQtY5kGOHXH_4CXpKniX2NNM3LYyhIBw2_jO9OHU5TXVA
+Cache-Control: no-cache
 ```
