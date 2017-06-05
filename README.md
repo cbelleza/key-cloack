@@ -41,6 +41,7 @@ OR using "Authorization" header "Basic BASE64(client_id:client_secret)"
 ```
 POST /auth/realms/oauth-demo/protocol/openid-connect/token HTTP/1.1
 Host: 127.0.0.1:8080
+Cache-Control: no-cache
 Authorization: Basic b2RhdGE0LW9hdXRoOjljYmEyMzhkLTc0ZjItNDJmZC1hMmIwLTVlNzc3Yjk1ODhiYw==
 Content-Type: application/x-www-form-urlencoded
 
