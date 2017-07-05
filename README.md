@@ -18,7 +18,10 @@ Keycloack support the following OAuth2 flows:
 
 ### Authorization code
 
-##### *Step 1: User grants access*
+##### *Step 1: User grant access*
+
+This flow will start with user informing its credentials into a login page, which is opened by some client application.
+The parameter response_type is set as "code" and after a successful authentication the redirect_uri has the code parameter for  second step.
 
 http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?response_type=code&client_id=odata4-oauth&redirect_uri=http://localhost&state=FFFFF
 
@@ -51,6 +54,10 @@ redirect_uri=http%3A%2F%2Flocalhost
 ```
 
 ### Implicit
+
+This flow will start with user informing its credentials into a login page, which is opened by some client application.
+The parameter response_type is set as "token" and after a successful authentication the redirect_uri has the token parameter managing API calls concession.
+
 http://127.0.0.1:8080/auth/realms/oauth-demo/protocol/openid-connect/auth?response_type=token&client_id=odata4-oauth&redirect_uri=http://localhost&nonce=11111&state=FFFFF
 
 ### Password
