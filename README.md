@@ -68,7 +68,6 @@ Content-Type: application/x-www-form-urlencoded
 
 grant_type=password
 client_id=odata4-oauth
-client_secret=8fb0027b-980b-48d6-af0b-a15f74fb465d
 username=user
 password=user
 ```
